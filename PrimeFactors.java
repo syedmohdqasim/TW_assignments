@@ -31,7 +31,7 @@ public class PrimeFactors {
     private static LinkedList<Integer> generate(int n) {
 
         LinkedList<Integer> l=new LinkedList<Integer>();
-        for(int i=2;i*i<=n;i++)
+        for(int i=2;i<=n/2;i++)
         {
             if(n%i==0)
             {
@@ -49,7 +49,7 @@ public class PrimeFactors {
 
     private static boolean isPrime(int i) {
 
-        for(int j=2;j<i/2;j++)
+        for(int j=2;j<=i/2;j++)
         {
             if(i%j==0)
                 return false;
